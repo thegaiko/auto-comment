@@ -3,17 +3,11 @@ from itertools import count
 import pytesseract
 from PIL import Image
 
-img = Image.open('1.png')
+N = 2
+f = open('bd.txt', 'w')
 
-text = pytesseract.image_to_string(
-    img)
-
-
-for i in range(len(text)):
-    count_space = 0
-    if text[i] == ['о']:
-        count_space += 1
-        text.remove[i]
-
-
-print(text)
+for i in range(N):
+    img = Image.open(f'{i}.jpeg')
+    text = pytesseract.image_to_string(
+        img, lang='rus')
+    f.write("'" + text + "',")
