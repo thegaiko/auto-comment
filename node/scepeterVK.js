@@ -1,7 +1,7 @@
 const playwright = require('playwright');
 
-var link = 'https://vk.com/purplecherrybot?w=wall-209886591_1'
-var post_id = '209886591_1'
+var link = 'https://vk.com/purplecherrybot?w=wall-209886591_12'
+var post_id = '209886591_12'
 var comment_link = 'div[id=reply_field-' + post_id + ']'
 
 var acc_email = [
