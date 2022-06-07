@@ -3,7 +3,7 @@ from itertools import count
 import pytesseract
 from PIL import Image
 
-N = 2
+N = 7
 f = open('bd.txt', 'w')
 
 for i in range(N):
